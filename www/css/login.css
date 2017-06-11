@@ -1,0 +1,63 @@
+@font-face{
+	font-family: big_noodle_titling;
+	src: local('big_noodle_titling'), url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: Segoe UI;
+	src: local('segoeui'), url('../fonts/segoeui.ttf') format('truetype');
+}
+
+body{
+	background: url('../images/bg-login.jpg') no-repeat fixed;
+	background-size: cover;
+	font-family: Segoe UI, Helvetica, sans-serif;
+	font-size:15px;
+	text-align: center;
+}
+
+.content{
+	width: auto;
+	position: relative;
+	top: 380px;
+	color: #B87333;
+	/*border: 1px red solid;*/
+}
+
+.label {
+	font-family: big_noodle_titling;
+	font-size:150%;
+	font-weight: normal;
+	color:white;
+}
+
+input[type=password], input[type=text]{
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.box {
+	border:#666666 solid 1px;
+}
+
+.btn-default{
+	background-color: #dbb999;
+	border:none;
+	padding:10px;
+	width:100px;
+	font-family: big_noodle_titling;
+	font-size: 150%;
+	color:#6e451e;
+}
+
+.btn-default:focus{
+	background-color: #dbb999;
+	color:white;
+}
+
+#capslockdiv{
+	background-color: rgba(255, 0, 0,0.3); 
+	display: none; 
+	color: white; 
+	width: 16%;
+}

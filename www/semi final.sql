@@ -1,0 +1,120 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 23, 2017 at 02:42 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.6.28
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_ingredients`
+--
+
+CREATE TABLE `tbl_ingredients` (
+  `id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `size` double NOT NULL,
+  `MaxSize` double DEFAULT NULL,
+  `temp` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `tbl_ingredients`
+--
+
+INSERT INTO `tbl_ingredients` (`id`, `name`, `size`, `MaxSize`, `temp`) VALUES
+(1, 'COFEE BEAN', 10000, 10000, 0),
+(2, 'VANILA POWDER', 1520, 1520, 0),
+(3, 'CHOCOLATE POWDER', 3968, 3968, 0),
+(4, 'DARK CHOCOLATE SAUCE', 18900, 18900, 0),
+(5, 'WHITE CHOCOLATE SAUCE', 9450, 9450, 0),
+(6, 'CARAMEL SAUCE', 9450, 9450, 0),
+(7, 'STAWBERRY REAL FRUIT', 9450, 9450, 0),
+(8, 'PEACH REAL FRUIT', 7560, 7560, 0),
+(9, 'MANGO REAL FRUIT', 7560, 7560, 0),
+(10, 'MATCHA LATTE POWDER', 2000, 2000, 0),
+(11, 'WHITE SYRUP', 3000, 3000, 0),
+(12, 'FRENCH VANILLA SYRUP', 3750, 3750, 0),
+(13, 'CHOCO  CHIPS', 2000, 2000, 0),
+(14, 'WHITE CHOCO CHIPS', 2000, 2000, 0),
+(15, 'COOKIES & CREAM CRASHED', 432, 432, 0),
+(16, 'BACK TEA', 50, 50, 0),
+(17, 'GREEN TEA', 50, 50, 0),
+(18, 'HOUSE BLEND TEA', 48, 48, 0),
+(19, 'WHIP CREAM', 15000, 15000, 0),
+(20, 'COFEE BEAN', 10000, 10000, 0),
+(21, 'LINGUINIE PASTA', 10000, 10000, 0),
+(22, 'PENNE PASTA', 10000, 10000, 0),
+(23, 'BACON', 6250, 6250, 0),
+(24, 'PARMASAN', 1135, 1135, 0),
+(25, 'QUICKMELT CHEESE', 2850, 2850, 0),
+(26, 'MUSHROOM', 3700, 3700, 0),
+(27, 'ALL PURPOSE CREAM', 3750, 3750, 0),
+(28, 'TOMATO SAUCE', 6000, 6000, 0),
+(29, 'TOMATO PASTE', 1500, 1500, 0),
+(30, 'TUNA FLAKES', 420, 420, 0),
+(31, 'OLIVE OIL', 500, 500, 0),
+(32, 'BLACK OLIVES SLICES', 330, 330, 0),
+(33, 'WHITE BREAD', 6, 6, 0),
+(34, 'BROWN BREAD', 4, 4, 0),
+(35, 'MILK', 2000, 2000, 1000),
+(36, 'HAM', 20000, 20000, 0),
+(37, 'EGG', 30, 30, 0),
+(38, 'BAR CHEESE', 60, 60, 0),
+(39, 'FRIES', 2000, 2000, 0),
+(40, 'MAYONAISE', 7000, 7000, 0),
+(41, 'CHEESE', 50, 50, 0),
+(42, 'BUFFALO WINGS', 5000, 5000, 0),
+(43, 'PORK CHOP STEAK', 5000, 5000, 0),
+(44, 'SIZZLING GARLIC PEPPER BEEF', 3000, 3000, 0),
+(45, 'T-BONE STEAK', 5000, 5000, 0),
+(46, 'BEEF TAPA', 10000, 10000, 0),
+(47, 'DAING NA BANGUS', 2000, 2000, 0),
+(48, 'SPAM', 3400, 3400, 0),
+(49, 'TOCINO', 2000, 2000, 0),
+(50, 'TORTANG LONGGANISA', 4000, 4000, 0),
+(51, 'RICE', 50000, 50000, 0),
+(52, 'GARLIC BREAD', 100, 100, 0),
+(53, 'BREAST FILLET', 5000, 5000, 0),
+(54, 'FUSILLI PASTA', 10000, 10000, 0),
+(55, 'BUTTER', 1000, 1000, 0),
+(56, 'FLOUR', 1000, 1000, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_ingredients`
+--
+ALTER TABLE `tbl_ingredients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_ingredients`
+--
+ALTER TABLE `tbl_ingredients`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

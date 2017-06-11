@@ -1,0 +1,191 @@
+@font-face{
+	font-family: big_noodle_titling;
+	src: local('big_noodle_titling'), url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: Segoe UI;
+	src: local('segoeui'), url('../fonts/segoeui.ttf') format('truetype');
+}
+
+body{
+	background: url('../images/bg.png') no-repeat fixed;
+	background-size: cover;
+	font-family: Segoe UI, Helvetica, sans-serif;
+	font-size:13px;
+	text-align: center;
+	color: black;
+}
+
+input[type=button]{
+	font-size: .95em;
+	padding: 10px 20px;
+}
+
+input[type=text]{
+	font-size:.95em;
+}
+
+table{
+	color:black;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.table{
+	font-size: .85em;
+}
+
+.transaction-table{
+	max-height: 500px;
+	overflow-y: auto;
+	margin: 15px 0 0 0;
+	vertical-align: middle;
+}
+
+table th, tr, td{
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+table.tabletwo{
+	font-size: 1em;
+}
+
+.bottom-align {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+}
+
+.btn-default{
+	background-color: #f9f9f9;
+}
+
+.btn-default:hover{
+	background-color: #e0e0e0;
+}
+
+.center-block{
+	margin: 0 auto;
+	float:none;
+	width: 60%;
+}
+
+.container{
+	padding: 20px 0 30px 0;
+}
+
+.container-items{
+	height: 185px;
+	margin: 15px -25px -10px 0;
+	width: 103px;
+}
+
+.custom-button{
+	font-size: 1em;
+}
+
+.custom-button-quant{
+	font-size: 1em;
+	padding: 3px;
+	background-color: #E3A771;
+	border: 1px solid #df9c60;
+}
+
+.custom-button-quant:hover{
+	background-color: #de9858;
+}
+
+.custom-table{
+	font-size: 1.1em !important;
+	vertical-align: middle !important;
+	width: 100% !important;
+}
+
+.custom-table tr, .custom-table td{
+	vertical-align: middle !important;
+}
+
+.custom-table:nth-child(odd){
+	background-color: #F9F9F9;
+}
+
+.header{
+	color: white;
+	font-family: big_noodle_titling;
+	font-size: 3em;
+	margin: 20px 0 -30px 0;
+	position: relative;
+	top: -30px;
+}
+
+.items{
+	background-color:#E3A771 !important;
+	border:0px solid #000;
+	border-radius:5px;
+	min-height:100%;
+	padding: 5px;
+	width:100%;
+}
+
+.m-l{
+	margin: 0 0px 0px 1px;
+}
+
+.m-t{
+	margin-top: 5px;
+	overflow-y: scroll;
+	height: 555px;
+}
+
+.modal-footer{
+	margin: 0 auto;
+	text-align:center !important;
+}
+
+.nav-tabs>li>a{
+	background-color: #eee;
+	color: #555;
+	padding: 3px;
+}
+
+.tab-content{
+	padding: 20px 0 20px 0;
+}
+
+.tab-pane{
+	padding: -15px 20px;
+}
+
+.white-bg{
+	background-color: white;
+}
+
+input[type=text].input-width{
+	width:80px;
+	border: 1px solid #E3A771;
+}
+
+.middle-align{
+	vertical-align: middle !important;
+}
+
+.default{
+	background-color: #EBC39C;
+}
+
+input[type=number].input-price{
+	width:60px !important;
+	font-weight: bold;
+	text-align: center;
+	color: gray;
+}
+
+input[type=number].input-price:focus{
+	color: black;
+}
+
+.transaction-num{
+	font-weight: bold;
+}

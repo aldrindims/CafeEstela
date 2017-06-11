@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Admin View</title>
+	<script src="css3.css"></script>
+
+	<link href="CSS/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/home.css">
+</head>
+<body>
+	<div class="container-fluid" style="padding-top: 10px;">
+			<div class="row">
+				<div class="col-sm-2 text-left">
+					<br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\addmeals.php:18) in <b>C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\auth.php</b> on line <b>3</b><br />
+	<span style='padding: 2px; background-color:rgba(255,255,255,0.5);'><b>Welcome, <span style='color:#ed0000;'>admin</span></b></span>				</div>
+				<div class="col-sm-1 col-sm-offset-9">
+					<form action="logout.php">
+						<button name="" class="btn btn-danger btn-xs"
+							onClick="return confirm('Are you sure you want to logout?');">Logout</button>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-sm-12">
+					<div class="col-sm-12" style="margin-top: -1%"><h1 class="header"><img src="images/header.png"></h1></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		<ul class="nav nav-tabs navbar-left">
+			<li><a href="adm.php">Stocks</a></li>
+			<li><a href="admreports.php">Report</a></li>
+			<li><a href="admprices.php">Prices</a></li>
+			<li><a href="admacc.php">Account Management</a></li>
+			<li class="active"><a href="addprodingr.php">Products</a></li>
+		</ul>
+
+		<div class="clearfix"></div>
+
+		<div class="tab-content white-bg">
+			<div id="stocks" class="tab-pane fade in active" style="height: 480px; overflow-y: auto; margin:0 0 0 15px; ">
+
+				<ul class="nav nav-pills nav-stacked col-md-2">
+					<li><a href="addprodingr.php">Add New Drinks</a></li>
+					<li><a href="addingr.php">Add New Ingredient</a></li>
+					<li class="active"><a data-toggle="tab" href="#newmeals">Add New Meals</a></li>
+					<li><a href="deleteprod.php">Delete Drinks</a></li>
+					<li><a href="deletemeal.php">Delete Meals</a></li>
+				</ul>
+
+				<div class="tab-content white-bg col-md-10">
+					<div id="newmeals" class="tab-pane fade in active">
+						<div class="row center-block" style="width: 100%;">
+							<div class="col-sm-11" style="margin: 0 auto; float: none;">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<div class="panel-title">Add New Meal</div>
+									</div>
+
+									<div class="panel-body">
+										<div class="col-md-10 center-block form-group" style="background-color:white; width:100%;">
+											
+			<script type="text/javascript">
+						function show1() {
+								document.getElementById("dThreshold1").style.display = "block";
+						}
+						function show2() {
+								document.getElementById("dThreshold2").style.display = "block";
+						}
+						function show3() {
+								var x = document.getElementById('dThreshold3');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show4() {
+								var x = document.getElementById('dThreshold4');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show5() {
+								var x = document.getElementById('dThreshold5');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show6() {
+								var x = document.getElementById('dThreshold6');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show7() {
+								var x = document.getElementById('dThreshold7');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show8() {
+								var x = document.getElementById('dThreshold8');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show9() {
+								var x = document.getElementById('dThreshold9');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show10() {
+								var x = document.getElementById('dThreshold10');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show11() {
+								var x = document.getElementById('dThreshold11');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function show12() {
+								var x = document.getElementById('dThreshold12');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide2() {
+								var x = document.getElementById('dThreshold2');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide3() {
+								var x = document.getElementById('dThreshold3');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide4() {
+								var x = document.getElementById('dThreshold4');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide5() {
+								var x = document.getElementById('dThreshold5');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide6() {
+								var x = document.getElementById('dThreshold6');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide7() {
+								var x = document.getElementById('dThreshold7');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide9() {
+								var x = document.getElementById('dThreshold9');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide10() {
+								var x = document.getElementById('dThreshold10');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide11() {
+								var x = document.getElementById('dThreshold11');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide12() {
+								var x = document.getElementById('dThreshold12');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+						function hide8() {
+								var x = document.getElementById('dThreshold8');
+					if (x.style.display === 'none') {
+							x.style.display = 'block';
+					} else {
+							x.style.display = 'none';
+					}
+						}
+				</script>
+
+
+											<form method="POST" action="">
+												<div class="form-group col-md-12">
+																<label for="product" class="col-md-2 control-label text-right" style="width: 10%;">Product Name</label>
+																<div class="col-md-10">
+																	<input type="text" name="product" placeholder="Product" required=required class="form-control"/>
+																</div>
+															</div>
+
+													<div class="form-group col-md-6">
+														<label for="price" class="col-md-3 control-label text-right">Price</label>
+														<span class="col-md-9 input-group">
+															<span class="input-group-addon" id="sizing-addon1">12oz</span>
+															<input type="text" name="price" placeholder="Price" class="form-control"/>
+														</span>
+													</div>
+													<div class="form-group col-md-5">
+														<span class="col-md-12 input-group">
+															<span class="input-group-addon" id="sizing-addon1">16oz</span>
+															<input type="text" name="price2" placeholder="Price2" class="form-control"/>
+														</span>
+													</div>
+
+													<div class="form-group col-md-6">
+														<label for="boxes1" class="col-md-3 control-label text-right">Ingredients</label>
+														<span class="col-md-9 input-group">
+															<select name="boxes1" class="form-control">
+																<option selected value="NULL">SELECT INGREDIENT</option>
+																<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>															</select>
+														</span>
+													</div>
+
+													<div class="form-group col-md-4">
+														<span class="col-md-12 input-group">
+															<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+															<input type="text" name="box1" placeholder="Subtracted Value1" class="form-control"/>
+														</span>
+													</div>
+
+													<div class="form-group col-md-2">
+														<span class="col-md-12 input-group text-left">
+															<input type="button" onclick="show2();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left:;"/>
+														</span>
+													</div>
+
+														<div id="dThreshold2" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes2" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box2" placeholder="Subtracted Value2" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show3();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide2();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold3" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes3" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box2" placeholder="Subtracted Value3" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show4();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide3();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold4" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes4" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box2" placeholder="Subtracted Value4" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show5();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide4();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold5" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes5" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box5" placeholder="Subtracted Value5" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show6();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide5();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold6" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes6" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box6" placeholder="Subtracted Value6" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show7();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide6();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold7" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes7" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box7" placeholder="Subtracted Value7" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show8();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide7();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold8" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes8" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box8" placeholder="Subtracted Value8" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show9();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide8();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold9" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes9" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box9" placeholder="Subtracted Value9" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show10();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide9();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold10" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes10" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box10" placeholder="Subtracted Value10" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show11();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide10();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold11" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes11" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box11" placeholder="Subtracted Value11" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		<input type="button" onclick="show12();" value="Add more" class="btn btn-success" style="padding: 4px; margin-left: -2em;" />&nbsp;
+																		<input type="button" onclick="hide11();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div id="dThreshold12" style="display: none">
+															<div class="form-group col-md-6">
+																<span class="col-md-9 col-md-offset-3 input-group">
+																	<select name="boxes12" class="form-control">
+																		<option selected value="NULL">SELECT INGREDIENT</option>
+																			<option value=1>COFEE BEAN</option><option value=2>VANILA POWDER</option><option value=3>CHOCOLATE POWDER</option><option value=4>DARK CHOCOLATE SAUCE</option><option value=5>WHITE CHOCOLATE SAUCE</option><option value=6>CARAMEL SAUCE</option><option value=7>STAWBERRY REAL FRUIT</option><option value=8>PEACH REAL FRUIT</option><option value=9>MANGO REAL FRUIT</option><option value=10>MATCHA LATTE POWDER</option><option value=11>WHITE SYRUP</option><option value=12>FRENCH VANILLA SYRUP</option><option value=13>CHOCO  CHIPS</option><option value=14>WHITE CHOCO CHIPS</option><option value=15>COOKIES & CREAM CRASHED</option><option value=16>BACK TEA</option><option value=17>GREEN TEA</option><option value=18>HOUSE BLEND TEA</option><option value=19>WHIP CREAM</option><option value=20>COFEE BEAN</option><option value=21>LINGUINIE PASTA</option><option value=22>PENNE PASTA</option><option value=23>BACON</option><option value=24>PARMASAN</option><option value=25>QUICKMELT CHEESE</option><option value=26>MUSHROOM</option><option value=27>ALL PURPOSE CREAM</option><option value=28>TOMATO SAUCE</option><option value=29>TOMATO PASTE</option><option value=30>TUNA FLAKES</option><option value=31>OLIVE OIL</option><option value=32>BLACK OLIVES SLICES</option><option value=33>WHITE BREAD</option><option value=34>BROWN BREAD</option><option value=35>MILK</option><option value=36>HAM</option><option value=37>EGG</option><option value=38>BAR CHEESE</option><option value=39>FRIES</option><option value=40>MAYONAISE</option><option value=41>CHEESE</option><option value=42>BUFFALO WINGS</option><option value=43>PORK CHOP STEAK</option><option value=44>SIZZLING GARLIC PEPPER BEEF</option><option value=45>T-BONE STEAK</option><option value=46>BEEF TAPA</option><option value=47>DAING NA BANGUS</option><option value=48>SPAM</option><option value=49>TOCINO</option><option value=50>TORTANG LONGGANISA</option><option value=51>RICE</option><option value=52>GARLIC BREAD</option><option value=53>BREAST FILLET</option><option value=54>FUSILLI PASTA</option><option value=55>BUTTER</option><option value=56>FLOUR</option>																	</select>
+																</span>
+															</div>
+
+															<div class="form-group col-md-4">
+																<span class="col-md-12 input-group">
+																	<span class="input-group-addon" id="sizing-addon1">Quantity</span>
+																	<input type="text" name="box12" placeholder="Subtracted Value12" class="form-control"/>
+																</span>
+															</div>
+
+
+															<div class="form-group col-md-2">
+																	<span class="col-md-12 input-group">
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="hide12();" value="&times;" class="btn btn-warning" style="padding: 4px; height:25px; width: 25px; border-radius: 50%;" />
+																	</span>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="col-md-12">
+																<input type="submit" name="addproduct" value="Submit" class="btn btn-md btn-success" onClick="return confirm('Are you sure you want to submit?');"/>
+															</div>
+														</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="CSS/bootstrap.min.js"></script>
+
+
+
+	<!-- <form action = "restock.php" method="GET">
+		<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-info">
+					<h4 class="modal-title"><b/>Restock</h4>
+				</div>
+				<div class="modal-body p-b-0">
+
+
+		<input type="number" required="required" placeholder="Enter Amount" id="amount" name="amount" style="height:50px;"/>
+		<input type="hidden" name="id" value="">
+
+
+
+		<p id="error"/>
+				</div>
+				<div class="modal-footer">
+		<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">Cancel</span>
+				</button> -->
+	<!--	<input type="submit" class="btn btn-warning pull-lg-left" name="Submit" id="submitbutton" />
+		<input type="submit" class="btn btn-warning pull-lg-left" class="fa fa-unlock-alt" value="Cancel" formnovalidate/>
+		</div>
+			</div>
+		</div>
+	</div>
+</form>   -->
+
+</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		if (location.hash) {
+			$("a[href='" + location.hash + "']").tab("show");
+		}
+		$(document.body).on("click", "a[data-toggle]", function(event) {
+			location.hash = this.getAttribute("href");
+		});
+	});
+	$(window).on("popstate", function() {
+		var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+		$("a[href='" + anchor + "']").tab("show");
+	});
+</script>
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Café Estela - Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <style>
+        body {
+            font-family: BigNoodleTitling;
+            font-size: 38px;
+            color: #B87333;   
+            background-image:url(LOGIN.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #select{
+            width:150px;   
+            height:30px;
+            font-family:segoe UI;
+            
+        }
+        
+        input[type=password]{
+            background-color: #dbb999;
+            border:none;
+            padding: 5px;
+            width:20%;
+            margin-top:35px;
+            font-size:15px;
+            font-family:Segoe UI;
+            text-align:center;
+        }
+        
+        input[type=submit]{
+            background-color: #dbb999;
+            border:none;
+            padding:10px;
+            font-size:15px;
+            width:12%;
+            font-family: BigNoodleTitling;
+            font-size: 30px;
+            color:#6e451e;
+        }
+    </style>
+    
+    <body style=" text-align:center;">
+        <form action ="LoginProcess.jsp">
+            <!--<br><br><br><br><br><br><br><br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            
+            <div style="margin-top:27%;">
+                User &nbsp;
+                <select name="username" select style="font-size:20px;" id='select'>
+                    <option value = "1">Employee</option>
+                    <option value = "2">Admin</option>
+                </select><br>
+                
+                <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                
+                <input type="password" name="password" value="" /><br/>
+                Password 
+                
+                <br><br>
+                
+                <input type="submit" value="LOG IN" onclick="counter()" />
+            </div>
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+@font-face{
+	font-family: big_noodle_titling;
+	src: local('big_noodle_titling'), url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: Segoe UI;
+	src: local('segoeui'), url('../fonts/segoeui.ttf') format('truetype');
+}
+
+body{
+	background: url('../images/bg.png') no-repeat fixed;
+	background-size: cover;
+	font-family: Segoe UI, Helvetica, sans-serif;
+	font-size:13px;
+	text-align: center;
+	color: black;
+}
+
+input[type=button]{
+	font-size: .95em;
+	padding: 10px 20px;
+}
+
+input[type=text]{
+	font-size:.95em;
+}
+
+table{
+	color:black;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.bottom-align {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+	padding: 20px 0 30px 0;
+}
+
+.container-items{
+	height: 185px; 
+	margin: 15px -25px -10px 0; 
+	width: 103px;
+}
+
+.header{
+	color: white;
+	font-family: big_noodle_titling;
+	font-size: 3em;
+	margin: 20px 0 -30px 0;
+	position: relative;
+	top: -30px;
+}
+
+.items{
+	background-color:#E3A771 !important; 
+	border:0px solid #000; 
+	border-radius:5px; 
+	min-height:100%; 
+	padding: 5px; 
+	width:100%;
+}
+
+.m-l{
+	margin: 0 0px 0px 1px;
+}
+
+.modal-footer{
+	margin: 0 auto;
+	text-align:center !important;
+}
+
+.nav-tabs>li>a{
+	background-color: #eee;
+	color: #555;
+	padding: 3px;
+}
+
+.tab-content{
+	padding: 0 0 20px 0
+}
+
+.white-bg{
+	background-color: white;
+}

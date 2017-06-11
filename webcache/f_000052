@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>CAFE ESTELA</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/home.css" type="text/css" />
+		
+        <script src="css/jquery.min.js"></script>
+        <script src="css/bootstrap.min.js"></script>
+        <script src="css/css3.css"></script>
+    </head>
+        <body>
+    	<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-sm-1 col-sm-offset-11">
+					<button name="" class="btn btn-danger btn-xs">Logout</button>
+				</div>
+				<div class="col-sm-12"><h1 class="header">CAFE ESTELA</h1></div>
+				<div class="clearfix"></div>
+			</div>
+
+	        <ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#products">Drinks</a></li>
+				<li><a href="home2.php">Meals</a></li>
+			</ul>
+
+
+			<div class="row m-l">
+				<div class="tab-content col-md-8 white-bg">
+					<div id="products" class="tab-pane fade in active">
+								                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CAFE AMERICANO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity1" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name1" value="CAFE AMERICANO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price1" value="65.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price21" value="70.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="1" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="1" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CAFE LATTE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity2" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name2" value="CAFE LATTE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price2" value="80.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price22" value="90.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="2" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="2" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CAFE MOCHA
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity3" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name3" value="CAFE MOCHA
+"/>
+						                        <input type="hidden" name="hidden_price" id="price3" value="80.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price23" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="3" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="3" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CAFE WHITE MOCHA
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity4" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name4" value="CAFE WHITE MOCHA
+"/>
+						                        <input type="hidden" name="hidden_price" id="price4" value="80.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price24" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="4" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="4" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CAPUCCINO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity5" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name5" value="CAPUCCINO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price5" value="80.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price25" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="5" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="5" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CARAMEL CORRETTO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity6" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name6" value="CARAMEL CORRETTO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price6" value="80.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price26" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="6" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="6" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CARAMEL FRAPPE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity7" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name7" value="CARAMEL FRAPPE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price7" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price27" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="7" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="7" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CHOCOLATE FRAPPE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity8" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name8" value="CHOCOLATE FRAPPE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price8" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price28" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="8" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="8" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>COOKIES AND CREAM
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity9" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name9" value="COOKIES AND CREAM
+"/>
+						                        <input type="hidden" name="hidden_price" id="price9" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price29" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="9" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="9" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>ESPRESSO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity10" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name10" value="ESPRESSO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price10" value="55.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price210" value="60.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="10" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="10" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>GREEN TEA
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity11" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name11" value="GREEN TEA
+"/>
+						                        <input type="hidden" name="hidden_price" id="price11" value="55.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price211" value="55.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="11" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="11" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>HOT CHOCOLATE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity12" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name12" value="HOT CHOCOLATE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price12" value="75.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price212" value="85.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="12" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="12" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>ICED AMERICANO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity13" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name13" value="ICED AMERICANO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price13" value="70.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price213" value="75.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="13" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="13" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>ICED CAFE LATTE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity14" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name14" value="ICED CAFE LATTE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price14" value="85.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price214" value="90.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="14" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="14" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>ICED CAFE MOCHA
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity15" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name15" value="ICED CAFE MOCHA
+"/>
+						                        <input type="hidden" name="hidden_price" id="price15" value="85.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price215" value="90.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="15" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="15" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>ICED CARAMEL CORRETTO
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity16" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name16" value="ICED CARAMEL CORRETTO
+"/>
+						                        <input type="hidden" name="hidden_price" id="price16" value="90.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price216" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="16" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="16" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>JAVA CHIP COOKIE FRAPPE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity17" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name17" value="JAVA CHIP COOKIE FRAPPE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price17" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price217" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="17" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="17" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>MATCHA LATTE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity18" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name18" value="MATCHA LATTE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price18" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price218" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="18" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="18" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>MOCHA FRAPPE
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity19" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name19" value="MOCHA FRAPPE
+"/>
+						                        <input type="hidden" name="hidden_price" id="price19" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price219" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="19" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="19" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>PEACHES & CREAM
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity20" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name20" value="PEACHES & CREAM
+"/>
+						                        <input type="hidden" name="hidden_price" id="price20" value="95.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price220" value="100.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="20" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="20" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>STRAWBERRY & CREAM</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity21" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name21" value="STRAWBERRY & CREAM"/>
+						                        <input type="hidden" name="hidden_price" id="price21" value="100.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price221" value="110.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="21" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="21" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>TROPICAL FRUIT
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity22" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name22" value="TROPICAL FRUIT
+"/>
+						                        <input type="hidden" name="hidden_price" id="price22" value="95.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price222" value="100.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="22" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="22" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>VANILLA BEAN HOT CHOCOLATE 
+</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity23" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name23" value="VANILLA BEAN HOT CHOCOLATE 
+"/>
+						                        <input type="hidden" name="hidden_price" id="price23" value="85.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price223" value="95.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="23" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="23" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                		                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>WHITE CHOCOLATE CHIP COOKIE FRAPPE</b></h5>	
+						                
+						                <div class="row">
+						                	<div class="col-sm-12 bottom-align">
+						                        <input type="radio" name="size" value="12oz" checked="checked"/>12oz<br>
+												<input type="radio" name="size" value="16oz"/>16oz
+						                        <input type="text" name="quantity" id="quantity24" class="form-control text-center" value="1" />
+						                        <input type="hidden" name="hidden_name" id="name24" value="WHITE CHOCOLATE CHIP COOKIE FRAPPE"/>
+						                        <input type="hidden" name="hidden_price" id="price24" value="120.00"/>
+						                        <input type="hidden" name="hidden_price2" id="price224" value="125.00"/>
+						                        <input type="button" name="add_to_cart_12oz" id="24" style="margin-top:0px; padding:3px;" class="btn btn-default form-control add_to_cart" value="Add to Cart" />
+						                        <input type="hidden" name="add_to_cart_16o" id="24" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-default form-control add_to_cart" value="16oz" />
+		                            		</div>
+										</div>
+		                            </div>
+		                        </div>
+		                					</div> <!--end product-->
+
+		            <div id="cart" class="tab-pane fade">
+								                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>FETTUCCINE ALFREDO</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity1" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name1" value="FETTUCCINE ALFREDO"/>
+				                                <input type="hidden" name="hidden_price" id="price1" value="140.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="1" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="1" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>PENNE PASTA WITH CHICKEN</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity2" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name2" value="PENNE PASTA WITH CHICKEN"/>
+				                                <input type="hidden" name="hidden_price" id="price2" value="140.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="2" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="2" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>TUNA FUSILLI</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity3" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name3" value="TUNA FUSILLI"/>
+				                                <input type="hidden" name="hidden_price" id="price3" value="140.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="3" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="3" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CLUB SANDWICH</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity4" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name4" value="CLUB SANDWICH"/>
+				                                <input type="hidden" name="hidden_price" id="price4" value="130.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="4" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="4" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>TUNA SANDWICH</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity5" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name5" value="TUNA SANDWICH"/>
+				                                <input type="hidden" name="hidden_price" id="price5" value="70.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="5" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="5" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>BUFFALO WINGS</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity6" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name6" value="BUFFALO WINGS"/>
+				                                <input type="hidden" name="hidden_price" id="price6" value="120.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="6" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="6" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>SIZZLING GARLIC PEPPER BEEF</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity7" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name7" value="SIZZLING GARLIC PEPPER BEEF"/>
+				                                <input type="hidden" name="hidden_price" id="price7" value="140.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="7" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="7" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>T-BONE STEAK</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity8" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name8" value="T-BONE STEAK"/>
+				                                <input type="hidden" name="hidden_price" id="price8" value="190.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="8" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="8" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>SIZZLING PORK CHOP STEAK</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity9" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name9" value="SIZZLING PORK CHOP STEAK"/>
+				                                <input type="hidden" name="hidden_price" id="price9" value="120.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="9" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="9" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>BEEF TAPA</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity10" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name10" value="BEEF TAPA"/>
+				                                <input type="hidden" name="hidden_price" id="price10" value="95.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="10" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="10" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>SPAM</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity11" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name11" value="SPAM"/>
+				                                <input type="hidden" name="hidden_price" id="price11" value="95.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="11" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="11" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>DAING NA BANGUS</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity12" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name12" value="DAING NA BANGUS"/>
+				                                <input type="hidden" name="hidden_price" id="price12" value="90.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="12" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="12" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>LONGGANISA OMMELETTE</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity13" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name13" value="LONGGANISA OMMELETTE"/>
+				                                <input type="hidden" name="hidden_price" id="price13" value="90.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="13" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="13" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            			                        <div class="col-sm-2 container-items">
+		                            <div class="items text-center">
+		                                <h5 style="font-size: .85em;"><b>CORNED BEEF</b></h5>
+		                                
+		                                <div class="row">
+		                                	<div class="col-sm-12 bottom-align">
+				                                <input type="text" name="quantity" id="quantity14" class="form-control text-center" value="1" />
+				                                <input type="hidden" name="hidden_name" id="name14" value="CORNED BEEF"/>
+				                                <input type="hidden" name="hidden_price" id="price14" value="85.00"/>
+				                                <input type="button" name="add_to_cart_12oz" id="14" style="margin-top:6px; padding:3px;" class="btn btn-warning form-control add_to_cart" value="Add to Cart" />
+				                                <input type="hidden" name="add_to_cart_16o" id="14" style="margin-top:6px; padding:3px; width: 60px" class="btn btn-warning form-control add_to_cart" value="16oz" />
+		                           			</div>
+										</div>
+		                            </div>
+		                        </div>
+		            						</div>
+
+				</div> <!-- end tab-content -->
+				Transaction Number: 2				
+		        <div class="col-md-4">			
+					
+		            <table id="removerow" class="table table-bordered table-striped table-condensed white-bg text-center" style="margin: 15px 0 0 0;">					
+		                <thead>
+		                	<tr>
+		                        <th width="col-md-3">Product Name</th>
+		                        <th width="col-md-1">Size</th>
+		                        <th width="col-md-2">Quantity</th>
+		                        <th width="col-md-2"> Price</th>
+		                        <th width="col-md-2">Total</th>
+		                        <th width="col-md-2">Action</th>
+		                    </tr>
+		                </thead>
+		                    		            </table>
+		        </div> <!-- end col ng table -->
+	        </div>
+	        
+	        <div id="id01" class="modal">
+
+					<form class="modal-content animate" method="POST" action="home4.php" id="form1">
+					<div class="imgcontainer"></div>
+
+						<div class="container">
+						<label><b>Input payment</b></label><br>
+	  					<input type="number" placeholder="Enter Amount" name="amount" required="required"/>
+	    			</div>
+
+					<div class="container" style="">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<a data-dismiss="modal" onclick="id02"><button type="button" class="cancelbtn">Proceed</button></a>
+
+				</form>
+					</div>
+			</div>
+
+			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-sm" role="document">
+	  				<div class="modal-content">
+
+	    				<div class="modal-header bg-info">          
+	      					<h4 class="modal-title"><b/>Input Payment</h4>
+	    				</div>
+
+	    				<div class="modal-body p-b-0">
+							<form method="post" action="">        
+								<input type="number" required="required" placeholder="Enter Amount" id="amount" name="amount" style="height:50px;"/>
+								<p id="error"/></p>
+							
+	    				</div>		
+
+	    				<div class="modal-footer">
+							<input type="submit" class="btn btn-warning pull-lg-left" data-dismiss="modal" data-toggle="modal" data-target="#modal-2" onclick="k()"class="fa fa-unlock-alt" value="Proceed" name="submit">
+							<input type="submit" class="btn btn-warning pull-lg-left" class="fa fa-unlock-alt" value="Cancel" data-dismiss="modal" aria-label="Close"/>							
+		
+							</form>
+						</div>
+	  				</div>
+				</div>
+				</div>
+				<!---------------------------------------- SECOND MODAL ---------------------------------------->
+				<form action="sessiondestroy.php" method="post"> 
+					<div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm" role="document">
+	  					<div class="modal-content">
+	    					<div class="modal-header bg-warning">
+	      						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        						<span aria-hidden="true">&times;</span>
+	      						</button>
+
+	      						<h4 class="modal-title">Bill Confirmation</h4>
+	    					</div>
+	    					<div class="modal-body">
+								<p id ="demo1"/> 
+								<p id="demo2"/>
+								<p id ="demo3"/>
+								<script>
+									function k(){
+										var amount = document.getElementById("amount").value;
+										var insufficient = "Insufficient amount";
+										var none = "No amount entered";
+										var tot = <br />
+<b>Notice</b>:  Undefined variable: total in <b>C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\home1.php</b> on line <b>276</b><br />
+;
+										var change = amount - tot;
+												
+										if (amount > tot){
+										document.getElementById('demo1').innerHTML =amount;
+										document.getElementById('demo3').innerHTML = change;
+										document.getElementById('demo2').innerHTML = tot;		
+										document.getElementById("submitbutton").disabled = false;		
+										}
+										else if(amount == ""){
+											document.getElementById('demo1').innerHTML = none;
+										}
+										else if(amount < tot){
+											document.getElementById('demo1').innerHTML = insufficient;
+											document.getElementById('demo3').innerHTML = "";
+											document.getElementById('demo2').innerHTML = "";
+											document.getElementById("submitbutton").disabled = true; 	
+										}else if(amount == tot){
+											document.getElementById('demo1').innerHTML =amount;
+											document.getElementById('demo3').innerHTML = change;
+											document.getElementById('demo2').innerHTML = tot;		
+											document.getElementById("submitbutton").disabled = false;												 	
+										}else{}
+									}
+								</script>
+	    					</div>
+
+					        <div class="modal-footer">
+								<button type="button" class="btn btn-info pull-lg-left" id="backbutton" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"><i class="fa fa-unlock-alt"></i>Back</button>
+								<input type="submit" class="btn btn-warning pull-lg-left" name="Submit" id="submitbutton" onClick="return confirm('Are you sure you would like to submit this order?');"/>
+					        </div>
+	  					</div>
+					</div>
+					</div>
+				<div class="row m-a-1" style="text-align: center;"></div>
+			</form>
+			
+			<!---------------------------------------- THIRD MODAL ---------------------------------------->
+				<form action="" method="post"> 
+					<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm" role="document">
+	  					<div class="modal-content">
+	    					<div class="modal-header bg-warning">
+	      						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        						<span aria-hidden="true">&times;</span>
+	      						</button>
+
+	      						<h4 class="modal-title">Senior Citizen</h4>
+	    					</div>
+							<div class="modal-body">
+							<!--	<p id ="demo1"/> 
+								<p id="demo2"/>
+								<p id ="demo3"/> -->							
+							<input type="radio" name="type" value="solo" onChange="findselected()"/>Solo<br>	
+							<input type="radio" name="type" value="group" onChange="findselected()" />Group<br>
+							<input type="radio" name="type"  style="display:none" value="none" checked /><br>		
+							<input type="number" id="inputtext" disabled placeholder="Number of heads" name="head" required="required"/>
+							
+							<script>
+							function findselected() { 
+							var result = document.querySelector('input[name="type"]:checked').value;
+							if(result=="solo"){
+		
+							document.getElementById("inputtext").setAttribute('disabled', true);
+							}
+							else{
+							document.getElementById("inputtext").removeAttribute('disabled');
+							}
+						}
+							
+							</script>
+							
+	    					</div> 
+
+					        <div class="modal-footer">
+						    <!-- <button type="button" class="btn btn-info pull-lg-left" id="backbutton" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"><i class="fa fa-unlock-alt"></i>Back</button> -->
+								 <input type="submit" class="btn btn-warning pull-lg-left" name="Submit" class="senior" id="submitbutton" onClick="return confirm('Are you sure you would like to submit this order?');"/> 
+					        </div>
+	  					</div>
+					</div>
+					</div>
+				<div class="row m-a-1" style="text-align: center;"></div>
+			</form>
+			
+			
+			
+		</div>
+    </body>
+</html>
+
+<script>
+	$(document).ready(function(data){
+
+		$('.add_to_cart').click(function(){
+			location.reload(true);
+			var product_id = $(this).attr("id");
+			var product_name = $('#name'+product_id).val();
+			var product_price = $('#price2'+product_id).val();
+			var product_price2 = $('#price'+product_id).val();
+			var product_size = $("input[name=size]:radio:checked").val();
+			var product_quantity = $('#quantity'+product_id).val();
+			var action = "addtocart";
+			if(product_quantity > 0)
+			{
+				$.ajax({
+					url:"action.php",
+					method:"POST",
+					dataType:"json",
+					data:{
+						product_id:product_id,
+						product_name:product_name,
+						product_price:product_price,
+						product_price2:product_price2,
+						product_size:product_size,
+						product_quantity:product_quantity,
+						// size_12oz:size_12oz,
+						// size_16oz:size_16oz,
+						// size:size
+						// product_size:product_size,
+						action:action
+					},
+					success:function(data)
+					{
+						$('#order_table').html(data.order_table);
+						$('.badge').text(data.cart_item);
+
+							//alert(product_size);
+					}
+				});
+			}
+			else
+			{
+				alert("Please Enter Number of Quantity")
+			}
+		});
+
+		$(document).on('click', '.delete', function(){
+			location.reload(true);
+			var product_id = $(this).attr("id");
+			var product_size = $(this).attr("name");
+			var action = "remove";
+			//alert(product_size);
+			//alert(product_id);
+			
+				$.ajax({
+					url:"action.php",
+					method:"POST",
+					dataType:"json",
+					data:{product_id:product_id, product_size:product_size, action:action},
+					success:function(data){
+						$('#order_table').html(data.order_table);
+						$('.badge').text(data.cart_item);
+					}
+
+				});
+			
+		});
+		
+		/**$(document).on('click', '.senior', function(){
+			location.reload(true);
+			var seniorcitizen = $("input[name=type]:radio:checked").val();				
+			var action = "remove";
+			//alert(product_size);
+			//alert(product_id);
+			
+				$.ajax({
+					url:"home1.php",
+					method:"POST",
+					dataType:"json",
+					data:{seniorcitizen:seniorcitizen, action:action},
+					success:function(data){
+						$('#order_table').html(data.order_table);
+						$('.badge').text(data.cart_item);
+					}
+
+				});
+			
+		});//SENIOR CITIZEN **/
+
+		$(document).on('click', '.addquant', function(){
+			location.reload(true);
+			var product_id = $(this).attr("id");
+			var product_size = $(this).attr("name");
+			var action = "addquant";
+				$.ajax({
+					url:"action.php",
+					method:"POST",
+					dataType:"json",
+					data:{product_id:product_id, product_size:product_size,  action:action},
+					success:function(data){
+						$('#order_table').html(data.order_table);
+						$('.badge').text(data.cart_item);
+					}
+
+				});
+		});
+
+		$(document).on('click', '.minquant', function(){
+			location.reload(true);
+			var product_id = $(this).attr("id");
+			var product_size = $(this).attr("name");
+			var action = "minquant";
+				$.ajax({
+					url:"action.php",
+					method:"POST",
+					dataType:"json",
+					data:{product_id:product_id, product_size:product_size, action:action},
+					success:function(data){
+						$('#order_table').html(data.order_table);
+						$('.badge').text(data.cart_item);
+					}
+
+				});
+		});
+	});
+
+	$(document).ready(function(data){
+
+		$('.rowremove').click(function(){
+			alert("Are you sure?");
+			window.location = 'http://localhost/mySys/home4.php';
+		});
+
+	});
+</script>

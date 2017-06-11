@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>View Stocks</title>
+		<script src="css3.css"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="CSS/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+	
+	<body>
+		<div class="container-fluid" style="padding-top: 10px;">
+			<div class="row">
+				<div class="col-sm-2 text-left">
+					<!-- <br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\adm.php:19) in <b>C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\auth.php</b> on line <b>3</b><br />
+ -->
+	<span style='padding: 2px; background-color:rgba(255,255,255,0.5);'><b>Welcome, <span style='color:#ed0000;'>admin</span></b></span>				</div>
+				<div class="col-sm-1 col-sm-offset-9">
+					<form action="logout.php">
+						<button name="" class="btn btn-danger btn-xs"
+							onClick="return confirm('Are you sure you want to logout?');">Logout</button>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-sm-12">
+					<div class="col-sm-12" style="margin-top: -1%"><h1 class="header"><img src="images/header.png"></h1></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<ul class="nav nav-tabs navbar-left">
+				<li class="active"><a data-toggle="tab" href="#stocks">Stocks</a></li>
+				<li><a href="admreports.php">Report</a></li>
+				<li><a href="admprices.php">Prices</a></li>
+				<li><a href="admacc.php">Account Management</a></li>
+				<li><a href="addprodingr.php">Products</a></li>
+			</ul>
+
+			<div class="clearfix"></div>
+
+			<div class="tab-content white-bg">
+				<div id="stocks" class="tab-pane fade in active" style="height: 480px; overflow-y: scroll;">
+					<div class="row center-block">
+						<div class="col-sm-12">
+
+							<table
+								class="table table-responsive table-bordered table-condensed custom-table" style="margin: 0;">
+								<thead>
+									<tr class="default">
+										<td class="col-sm-4" style="vertical-align: middle !important;"><b>Ingredient</b></td>
+										<td class="col-sm-1" style="vertical-align: middle !important;"><b>Max
+												quantity</b></td>
+										<td class="col-sm-1" style="vertical-align: middle !important;"><b>Current
+												quantity</b></td>
+										<td class="col-sm-5" style="vertical-align: middle !important;"><b>Action</b></td>
+									</tr>
+								</thead>
+							</table>
+
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>COFEE BEAN</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>9744.88</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='1'/><input type=hidden name=currentsize value='9744.88'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='COFEE BEAN'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>VANILA POWDER</b>													</td>
+													<td class="col-sm-1">1520 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1520</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='2'/><input type=hidden name=currentsize value='1520'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='1520'/><input type=hidden name=ingr value='VANILA POWDER'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>CHOCOLATE POWDER</b>													</td>
+													<td class="col-sm-1">3968 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3878</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='3'/><input type=hidden name=currentsize value='3878'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3968'/><input type=hidden name=ingr value='CHOCOLATE POWDER'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>DARK CHOCOLATE SAUCE</b>													</td>
+													<td class="col-sm-1">18900 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>18340</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='4'/><input type=hidden name=currentsize value='18340'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='18900'/><input type=hidden name=ingr value='DARK CHOCOLATE SAUCE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>WHITE CHOCOLATE SAUCE</b>													</td>
+													<td class="col-sm-1">9450 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>7700</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='5'/><input type=hidden name=currentsize value='7700'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='9450'/><input type=hidden name=ingr value='WHITE CHOCOLATE SAUCE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>CARAMEL SAUCE</b>													</td>
+													<td class="col-sm-1">9450 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>9930</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='6'/><input type=hidden name=currentsize value='9930'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='9450'/><input type=hidden name=ingr value='CARAMEL SAUCE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>STAWBERRY REAL FRUIT</b>													</td>
+													<td class="col-sm-1">9450 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>9365</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='7'/><input type=hidden name=currentsize value='9365'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='9450'/><input type=hidden name=ingr value='STAWBERRY REAL FRUIT'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>PEACH REAL FRUIT</b>													</td>
+													<td class="col-sm-1">7560 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>7419</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='8'/><input type=hidden name=currentsize value='7419'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='7560'/><input type=hidden name=ingr value='PEACH REAL FRUIT'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>MANGO REAL FRUIT</b>													</td>
+													<td class="col-sm-1">7560 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>7560</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='9'/><input type=hidden name=currentsize value='7560'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='7560'/><input type=hidden name=ingr value='MANGO REAL FRUIT'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>MATCHA LATTE POWDER</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1990</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='10'/><input type=hidden name=currentsize value='1990'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='MATCHA LATTE POWDER'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>WHITE SYRUP</b>													</td>
+													<td class="col-sm-1">3000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2858.65</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='11'/><input type=hidden name=currentsize value='2858.65'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3000'/><input type=hidden name=ingr value='WHITE SYRUP'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>FRENCH VANILLA SYRUP</b>													</td>
+													<td class="col-sm-1">3750 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3675</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='12'/><input type=hidden name=currentsize value='3675'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3750'/><input type=hidden name=ingr value='FRENCH VANILLA SYRUP'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>CHOCO  CHIPS</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1994</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='13'/><input type=hidden name=currentsize value='1994'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='CHOCO  CHIPS'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>WHITE CHOCO CHIPS</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='14'/><input type=hidden name=currentsize value='2000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='WHITE CHOCO CHIPS'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>COOKIES & CREAM CRASHED</b>													</td>
+													<td class="col-sm-1">432 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>428</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='15'/><input type=hidden name=currentsize value='428'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='432'/><input type=hidden name=ingr value='COOKIES & CREAM CRASHED'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BACK TEA</b>													</td>
+													<td class="col-sm-1">50 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>50</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='16'/><input type=hidden name=currentsize value='50'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='50'/><input type=hidden name=ingr value='BACK TEA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>GREEN TEA</b>													</td>
+													<td class="col-sm-1">50 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>48.5</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='17'/><input type=hidden name=currentsize value='48.5'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='50'/><input type=hidden name=ingr value='GREEN TEA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>HOUSE BLEND TEA</b>													</td>
+													<td class="col-sm-1">48 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>48</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='18'/><input type=hidden name=currentsize value='48'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='48'/><input type=hidden name=ingr value='HOUSE BLEND TEA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>WHIP CREAM</b>													</td>
+													<td class="col-sm-1">15000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>14890</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='19'/><input type=hidden name=currentsize value='14890'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='15000'/><input type=hidden name=ingr value='WHIP CREAM'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>COFEE BEAN</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>10000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='20'/><input type=hidden name=currentsize value='10000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='COFEE BEAN'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>LINGUINIE PASTA</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>10000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='21'/><input type=hidden name=currentsize value='10000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='LINGUINIE PASTA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>PENNE PASTA</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>10000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='22'/><input type=hidden name=currentsize value='10000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='PENNE PASTA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BACON</b>													</td>
+													<td class="col-sm-1">6250 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>6250</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='23'/><input type=hidden name=currentsize value='6250'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='6250'/><input type=hidden name=ingr value='BACON'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>PARMASAN</b>													</td>
+													<td class="col-sm-1">1135 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1135</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='24'/><input type=hidden name=currentsize value='1135'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='1135'/><input type=hidden name=ingr value='PARMASAN'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>QUICKMELT CHEESE</b>													</td>
+													<td class="col-sm-1">2850 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2850</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='25'/><input type=hidden name=currentsize value='2850'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2850'/><input type=hidden name=ingr value='QUICKMELT CHEESE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>MUSHROOM</b>													</td>
+													<td class="col-sm-1">3700 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3700</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='26'/><input type=hidden name=currentsize value='3700'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3700'/><input type=hidden name=ingr value='MUSHROOM'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>ALL PURPOSE CREAM</b>													</td>
+													<td class="col-sm-1">3750 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3750</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='27'/><input type=hidden name=currentsize value='3750'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3750'/><input type=hidden name=ingr value='ALL PURPOSE CREAM'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>TOMATO SAUCE</b>													</td>
+													<td class="col-sm-1">6000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>6000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='28'/><input type=hidden name=currentsize value='6000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='6000'/><input type=hidden name=ingr value='TOMATO SAUCE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>TOMATO PASTE</b>													</td>
+													<td class="col-sm-1">1500 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1500</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='29'/><input type=hidden name=currentsize value='1500'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='1500'/><input type=hidden name=ingr value='TOMATO PASTE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>TUNA FLAKES</b>													</td>
+													<td class="col-sm-1">420 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>420</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='30'/><input type=hidden name=currentsize value='420'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='420'/><input type=hidden name=ingr value='TUNA FLAKES'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>OLIVE OIL</b>													</td>
+													<td class="col-sm-1">500 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>500</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='31'/><input type=hidden name=currentsize value='500'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='500'/><input type=hidden name=ingr value='OLIVE OIL'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BLACK OLIVES SLICES</b>													</td>
+													<td class="col-sm-1">330 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>330</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='32'/><input type=hidden name=currentsize value='330'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='330'/><input type=hidden name=ingr value='BLACK OLIVES SLICES'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>WHITE BREAD</b>													</td>
+													<td class="col-sm-1">6 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>6</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='33'/><input type=hidden name=currentsize value='6'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='6'/><input type=hidden name=ingr value='WHITE BREAD'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BROWN BREAD</b>													</td>
+													<td class="col-sm-1">4 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>4</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='34'/><input type=hidden name=currentsize value='4'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='4'/><input type=hidden name=ingr value='BROWN BREAD'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>MILK</b>  <font color='red'><b><i>STOCK BELOW 50%</i></b></font>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>805</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='35'/><input type=hidden name=currentsize value='805'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='MILK'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>HAM</b>													</td>
+													<td class="col-sm-1">20000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>20000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='36'/><input type=hidden name=currentsize value='20000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='20000'/><input type=hidden name=ingr value='HAM'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>EGG</b>													</td>
+													<td class="col-sm-1">30 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>30</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='37'/><input type=hidden name=currentsize value='30'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='30'/><input type=hidden name=ingr value='EGG'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BAR CHEESE</b>													</td>
+													<td class="col-sm-1">60 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>60</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='38'/><input type=hidden name=currentsize value='60'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='60'/><input type=hidden name=ingr value='BAR CHEESE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>FRIES</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='39'/><input type=hidden name=currentsize value='2000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='FRIES'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>MAYONAISE</b>													</td>
+													<td class="col-sm-1">7000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>7000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='40'/><input type=hidden name=currentsize value='7000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='7000'/><input type=hidden name=ingr value='MAYONAISE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>CHEESE</b>													</td>
+													<td class="col-sm-1">50 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>50</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='41'/><input type=hidden name=currentsize value='50'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='50'/><input type=hidden name=ingr value='CHEESE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BUFFALO WINGS</b>													</td>
+													<td class="col-sm-1">5000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>5000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='42'/><input type=hidden name=currentsize value='5000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='5000'/><input type=hidden name=ingr value='BUFFALO WINGS'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>PORK CHOP STEAK</b>													</td>
+													<td class="col-sm-1">5000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>5000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='43'/><input type=hidden name=currentsize value='5000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='5000'/><input type=hidden name=ingr value='PORK CHOP STEAK'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>SIZZLING GARLIC PEPPER BEEF</b>													</td>
+													<td class="col-sm-1">3000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='44'/><input type=hidden name=currentsize value='3000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3000'/><input type=hidden name=ingr value='SIZZLING GARLIC PEPPER BEEF'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>T-BONE STEAK</b>													</td>
+													<td class="col-sm-1">5000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>5000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='45'/><input type=hidden name=currentsize value='5000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='5000'/><input type=hidden name=ingr value='T-BONE STEAK'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BEEF TAPA</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>10000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='46'/><input type=hidden name=currentsize value='10000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='BEEF TAPA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>DAING NA BANGUS</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='47'/><input type=hidden name=currentsize value='2000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='DAING NA BANGUS'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>SPAM</b>													</td>
+													<td class="col-sm-1">3400 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>3400</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='48'/><input type=hidden name=currentsize value='3400'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='3400'/><input type=hidden name=ingr value='SPAM'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>TOCINO</b>													</td>
+													<td class="col-sm-1">2000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>2000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='49'/><input type=hidden name=currentsize value='2000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='2000'/><input type=hidden name=ingr value='TOCINO'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>TORTANG LONGGANISA</b>													</td>
+													<td class="col-sm-1">4000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>4000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='50'/><input type=hidden name=currentsize value='4000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='4000'/><input type=hidden name=ingr value='TORTANG LONGGANISA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>RICE</b>													</td>
+													<td class="col-sm-1">50000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>50000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='51'/><input type=hidden name=currentsize value='50000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='50000'/><input type=hidden name=ingr value='RICE'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>GARLIC BREAD</b>													</td>
+													<td class="col-sm-1">100 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>100</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='52'/><input type=hidden name=currentsize value='100'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='100'/><input type=hidden name=ingr value='GARLIC BREAD'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BREAST FILLET</b>													</td>
+													<td class="col-sm-1">5000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>5000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='53'/><input type=hidden name=currentsize value='5000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='5000'/><input type=hidden name=ingr value='BREAST FILLET'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>FUSILLI PASTA</b>													</td>
+													<td class="col-sm-1">10000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>10000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='54'/><input type=hidden name=currentsize value='10000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='10000'/><input type=hidden name=ingr value='FUSILLI PASTA'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>BUTTER</b>													</td>
+													<td class="col-sm-1">1000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='55'/><input type=hidden name=currentsize value='1000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='1000'/><input type=hidden name=ingr value='BUTTER'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+							
+										<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+											<tbody>
+												<tr>
+													<td class="col-sm-4">
+														<b>FLOUR</b>													</td>
+													<td class="col-sm-1">1000 </td>
+													<td class="col-sm-1">
+														<form action = 'restock.php' method=post>1000</td><td class='col-sm-5'><input type=number step='.01' min=0 name=amount placeholder='Quantity'/> <input type=hidden name=id value='56'/><input type=hidden name=currentsize value='1000'/><input type=hidden name=beforesize value='0'/><input type=hidden name=maxsize value='1000'/><input type=hidden name=ingr value='FLOUR'/>															<input type=submit name=btn value=Restock onClick = "return confirm('Are you sure you want to restock?')" class='btn btn-sm btn-success'/>
+
+															<input type=submit name= btn value=Undo class='btn btn-sm btn-warning'  disabled 															onClick = "return confirm('Are you sure you want to undo?')"/>
+
+															</form></td>												</tr>
+											</tbody>
+										</table>
+													</div>
+					</div>
+				</div>
+
+				<div id="report" class="tab-pane fade">
+					<h1>REPORT</h1>
+
+					<ul class="nav nav-pills nav-stacked col-xs-1">
+						<li class="active"><a data-toggle="tab" href="#daily">Daily</a></li>
+						<li><a data-toggle="tab" href="#weekly">Weekly</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="daily" class="tab-pane fade in active">
+							<h1>DAILY CONTENT</h1>
+						</div>
+
+						<div id="weekly" class="tab-pane fade">
+							<h1>WEEKLY CONTENT</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="CSS/bootstrap.min.js"></script>
+
+
+
+	<form action = "restock.php" method="GET">
+		<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-info">
+					<h4 class="modal-title"><b/>Restock</h4>
+				</div>
+				<div class="modal-body p-b-0">
+
+
+		<input type="number" required="required" placeholder="Enter Amount" id="amount" name="amount" style="height:50px;"/>
+		<input type="hidden" name="id" value="">
+
+
+
+		<p id="error"/>
+				</div>
+				<div class="modal-footer">
+		<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">Cancel</span>
+					</button> -->
+		<input type="submit" class="btn btn-warning pull-lg-left" name="Submit" id="submitbutton" />
+		<input type="submit" class="btn btn-warning pull-lg-left" class="fa fa-unlock-alt" value="Cancel" formnovalidate/>
+		</div>
+			</div>
+		</div>
+	</div>
+	</form>
+	</body>
+</html>

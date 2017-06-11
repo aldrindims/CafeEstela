@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Prices</title>
+
+		<script src="css3.css"></script>
+
+		<!-- Bootstrap -->
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+	</head>
+	<body>
+		<div class="container-fluid" style="padding-top: 10px;">
+			<div class="row">
+				<div class="col-sm-2 text-left">
+					<!-- <br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\admprices.php:20) in <b>C:\Users\Simon\Desktop\phpdesktop-chrome-47.5-rc-php-5.4.33\www\auth.php</b> on line <b>3</b><br />
+ -->
+	<span style='padding: 2px; background-color:rgba(255,255,255,0.5);'><b>Welcome, <span style='color:#ed0000;'>admin</span></b></span>				</div>
+				<div class="col-sm-1 col-sm-offset-9">
+					<form action="logout.php">
+						<button name="" class="btn btn-danger btn-xs"
+							onClick="return confirm('Are you sure you want to logout?');">Logout</button>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-sm-12">
+					<div class="col-sm-12" style="margin-top: -1%"><h1 class="header"><img src="images/header.png"></h1></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<ul class="nav nav-tabs navbar-left">
+				<li><a href="adm.php">Stocks</a></li>
+				<li><a href="admreports.php">Report</a></li>
+				<li class="active"><a href="admprices.php">Prices</a></li>
+				<li><a href="admacc.php">Account Management</a></li>
+				<li><a href="addprodingr.php">Products</a></li>
+			</ul>
+
+			<div class="clearfix"></div>
+
+			<div class="tab-content white-bg">
+				<div id="prices" class="tab-pane fade in active" style="height: 480px; overflow-y: auto; margin-left:15px;"><!-------- Prices -------->
+				
+					<div class="row">
+						<div class="col-md-2 affix">
+							<nav role="navigation" >
+								<ul class="nav nav-pills nav-stacked">
+									<li class="active"><a data-toggle="tab" href="#drinks">Drinks</a></li>
+									<li><a data-toggle="tab" href="#meals">Meals</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<div class="tab-content white-bg col-md-10 col-md-offset-2">
+						<div id="drinks" class="tab-pane fade in active">
+							<div class="row" style="width: 100%;">
+								<div class="col-sm-12" style="margin: 0 auto; float: none;">
+									<table class="table table-responsive table-bordered table-condensed custom-table" style="margin: 0;">
+										<thead>
+											<tr class="default">
+												<td class="col-sm-3" ><b></b></td>
+												<td class="col-sm-4" colspan="2" ><b>12oz</b></td>
+												<td class="col-sm-4" colspan="2" ><b>16oz</b></td>
+												<td class="col-sm-1" ><b></b></td>
+											</tr>
+											<tr class="default">
+												<td class="col-sm-3" ><b>Ingredient</b></td>
+												<td class="col-sm-2" ><b>Current</b></td>
+												<td class="col-sm-2" ><b>New</b></td>
+												<td class="col-sm-2" ><b>Current</b></td>
+												<td class="col-sm-2" ><b>New</b></td>
+												<td class="col-sm-1" ><b>&nbsp;&nbsp;&nbsp;Action&nbsp;&nbsp;</b></td>
+											</tr>
+										</thead>
+									</table>
+
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>ICED AMERICANO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;70.00</td><td> &#8369;<input type=number step='.01' name='p1' value='70.00' class='input-price'/></td><td class='col-sm-2'>&#8369;75.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='75.00' class='input-price'/></td><input type=hidden name=id value='13'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>HOT CHOCOLATE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;75.00</td><td> &#8369;<input type=number step='.01' name='p1' value='75.00' class='input-price'/></td><td class='col-sm-2'>&#8369;85.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='85.00' class='input-price'/></td><input type=hidden name=id value='12'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>GREEN TEA
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;55.00</td><td> &#8369;<input type=number step='.01' name='p1' value='55.00' class='input-price'/></td><td class='col-sm-2'>&#8369;55.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='55.00' class='input-price'/></td><input type=hidden name=id value='11'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>ESPRESSO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;55.00</td><td> &#8369;<input type=number step='.01' name='p1' value='55.00' class='input-price'/></td><td class='col-sm-2'>&#8369;60.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='60.00' class='input-price'/></td><input type=hidden name=id value='10'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>COOKIES AND CREAM
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='9'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CHOCOLATE FRAPPE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='8'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CARAMEL FRAPPE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='7'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CARAMEL CORRETTO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;80.00</td><td> &#8369;<input type=number step='.01' name='p1' value='80.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='6'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CAPUCCINO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;80.00</td><td> &#8369;<input type=number step='.01' name='p1' value='80.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='5'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CAFE WHITE MOCHA
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;80.00</td><td> &#8369;<input type=number step='.01' name='p1' value='80.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='4'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CAFE MOCHA
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;80.00</td><td> &#8369;<input type=number step='.01' name='p1' value='80.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='3'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CAFE LATTE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;80.00</td><td> &#8369;<input type=number step='.01' name='p1' value='80.00' class='input-price'/></td><td class='col-sm-2'>&#8369;90.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='90.00' class='input-price'/></td><input type=hidden name=id value='2'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>CAFE AMERICANO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;65.00</td><td> &#8369;<input type=number step='.01' name='p1' value='65.00' class='input-price'/></td><td class='col-sm-2'>&#8369;70.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='70.00' class='input-price'/></td><input type=hidden name=id value='1'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>ICED CAFE LATTE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;85.00</td><td> &#8369;<input type=number step='.01' name='p1' value='85.00' class='input-price'/></td><td class='col-sm-2'>&#8369;90.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='90.00' class='input-price'/></td><input type=hidden name=id value='14'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>ICED CAFE MOCHA
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;85.00</td><td> &#8369;<input type=number step='.01' name='p1' value='85.00' class='input-price'/></td><td class='col-sm-2'>&#8369;90.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='90.00' class='input-price'/></td><input type=hidden name=id value='15'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>ICED CARAMEL CORRETTO
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;90.00</td><td> &#8369;<input type=number step='.01' name='p1' value='90.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='16'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>JAVA CHIP COOKIE FRAPPE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='17'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>MATCHA LATTE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='18'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>MOCHA FRAPPE
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='19'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>PEACHES & CREAM
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01' name='p1' value='95.00' class='input-price'/></td><td class='col-sm-2'>&#8369;100.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='100.00' class='input-price'/></td><input type=hidden name=id value='20'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>STRAWBERRY & CREAM</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;100.00</td><td> &#8369;<input type=number step='.01' name='p1' value='100.00' class='input-price'/></td><td class='col-sm-2'>&#8369;110.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='110.00' class='input-price'/></td><input type=hidden name=id value='21'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>TROPICAL FRUIT
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01' name='p1' value='95.00' class='input-price'/></td><td class='col-sm-2'>&#8369;100.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='100.00' class='input-price'/></td><input type=hidden name=id value='22'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>VANILLA BEAN HOT CHOCOLATE 
+</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;85.00</td><td> &#8369;<input type=number step='.01' name='p1' value='85.00' class='input-price'/></td><td class='col-sm-2'>&#8369;95.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='95.00' class='input-price'/></td><input type=hidden name=id value='23'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+																					<table class="table-responsive table-bordered table-condensed custom-table">
+													<tbody>
+														<tr>
+															<td class="col-sm-3"><b>WHITE CHOCOLATE CHIP COOKIE FRAPPE</b></td>
+																<form action = 'restock1.php' method=post><td class='col-sm-2'>&#8369;120.00</td><td> &#8369;<input type=number step='.01' name='p1' value='120.00' class='input-price'/></td><td class='col-sm-2'>&#8369;125.00</td><td> &#8369;<input type=number step='.01'  name=p2 value='125.00' class='input-price'/></td><input type=hidden name=id value='24'/>																	<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																	</form>														</tr>
+													</tbody>
+												</table>
+									
+								</div>
+							</div>
+						</div>
+
+
+					<div id="meals" class="tab-pane fade">
+						<div class="row" style="width: 100%;">
+							<div class="col-sm-12" style="margin: 0 auto; float: none;">
+								<table class="table table-responsive table-bordered table-condensed custom-table" style="margin: 0;">
+									<thead>
+										<tr class="default">
+
+
+										</tr>
+										<tr class="default">
+											<td class="col-sm-4" ><b>Ingredient</b></td>
+											<td class="col-sm-3" ><b>Current</b></td>
+											<td class="col-sm-3" ><b>New</b></td>
+											<td class="col-sm-1" ><b>&nbsp;&nbsp;&nbsp;Action&nbsp;&nbsp;</b></td>
+										</tr>
+									</thead>
+								</table>
+
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>FETTUCCINE ALFREDO</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;140.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='140.00' class='input-price'/></td><input type=hidden name=id value='1'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>PENNE PASTA WITH CHICKEN</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;140.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='140.00' class='input-price'/></td><input type=hidden name=id value='2'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>TUNA FUSILLI</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;140.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='140.00' class='input-price'/></td><input type=hidden name=id value='3'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>CLUB SANDWICH</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;130.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='130.00' class='input-price'/></td><input type=hidden name=id value='4'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>TUNA SANDWICH</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;70.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='70.00' class='input-price'/></td><input type=hidden name=id value='5'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>BUFFALO WINGS</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;120.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='120.00' class='input-price'/></td><input type=hidden name=id value='6'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>SIZZLING GARLIC PEPPER BEEF</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;140.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='140.00' class='input-price'/></td><input type=hidden name=id value='7'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>T-BONE STEAK</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;190.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='190.00' class='input-price'/></td><input type=hidden name=id value='8'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>SIZZLING PORK CHOP STEAK</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;120.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='120.00' class='input-price'/></td><input type=hidden name=id value='9'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>BEEF TAPA</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;95.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='95.00' class='input-price'/></td><input type=hidden name=id value='10'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>SPAM</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;95.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='95.00' class='input-price'/></td><input type=hidden name=id value='11'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>DAING NA BANGUS</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;90.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='90.00' class='input-price'/></td><input type=hidden name=id value='12'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>LONGGANISA OMMELETTE</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;90.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='90.00' class='input-price'/></td><input type=hidden name=id value='13'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>CORNED BEEF</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;85.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='85.00' class='input-price'/></td><input type=hidden name=id value='14'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+																			<table class="table-responsive table-bordered table-condensed custom-table" width=100%>
+												<tbody>
+													<tr>
+														<td class="col-sm-4"><b>Sample</b></td>
+															<form action ='restock2.php' method=post><td class='col-sm-3'>&#8369;120.00</td><td class='col-sm-3'> &#8369;<input type=number name='p1' value='120.00' class='input-price'/></td><input type=hidden name=id value='15'/>																<td class='col-sm-1'><input type=submit value=Update class='btn btn-sm btn-success' onClick = "return confirm('Are you sure you want to update?')" /></td>
+																</form>													</tr>
+												</tbody>
+											</table>
+								
+							</div>
+						</div>
+					</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="CSS/bootstrap.min.js"></script>
+
+
+
+	<form action = "restock.php" method="GET">
+		<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-info">
+					<h4 class="modal-title"><b/>Restock</h4>
+				</div>
+				<div class="modal-body p-b-0">
+
+
+		<input type="number" required="required" placeholder="Enter Amount" id="amount" name="amount" style="height:50px;"/>
+		<input type="hidden" name="id" value="">
+
+
+
+		<p id="error"/>
+				</div>
+				<div class="modal-footer">
+		<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">Cancel</span>
+					</button> -->
+		<input type="submit" class="btn btn-warning pull-lg-left" name="Submit" id="submitbutton" />
+		<input type="submit" class="btn btn-warning pull-lg-left" class="fa fa-unlock-alt" value="Cancel" formnovalidate/>
+		</div>
+			</div>
+		</div>
+	</div>
+	</form>
+	</body>
+</html>
+<script>
+$(document).ready(function() {
+		if (location.hash) {
+				$("a[href='" + location.hash + "']").tab("show");
+		}
+		$(document.body).on("click", "a[data-toggle]", function(event) {
+				location.hash = this.getAttribute("href");
+		});
+});
+$(window).on("popstate", function() {
+		var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+		$("a[href='" + anchor + "']").tab("show");
+});
+</script>
+<script>
+	  $('#affix-this').affix({
+    offset: {
+      top: $('#affix-this').offset().top
+    }
+  })
+</script>
