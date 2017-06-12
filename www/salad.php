@@ -79,6 +79,8 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 				<li class="active"><a data-toggle="tab"  href="salad.php">Salad</a></li>
 				<li ><a  href="pastry.php">Pastry</a></li>
 				<li ><a  href="day.php">All Day</a></li>
+				<li ><a href="smoothies.php">Smoothies</a></li>
+				<li><a href="addons.php">Add-ons</a></li>
 			</ul>
 
 			<div class="row m-l">
@@ -148,9 +150,9 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 										<button class="btn btn-danger btn-xs" <?php if(empty($_SESSION["shopping_cart"])){ ?> disabled <?php   } ?> onClick="return confirm('Are you sure you want to clear?');">
 											<img src="images/2.png" width="20"/>
 										</button>
-										
-										
-										
+
+
+
 								</form>
 
 									</th>
@@ -338,7 +340,7 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 					<div class="modal-dialog modal-sm" role="document">
 						<div class="modal-content">
 
-							<div class="modal-header bg-warning">								
+							<div class="modal-header bg-warning">
 								<h4 class="modal-title">Bill Confirmation</h4>
 									</div>
 
@@ -413,7 +415,7 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 									<div class="modal-footer">
 									<input type="submit" class="btn btn-warning pull-lg-left" name="Submit" onClick="return confirm('Are you sure you would like to submit this order?');"/>
 										<button type="button" class="btn btn-info pull-lg-left" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"><i class="fa fa-unlock-alt"></i>Back</button>
-								
+
 									</div>
 						</div>
 					</div>
@@ -426,7 +428,7 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 					<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-hidden="true">
 					<div class="modal-dialog modal-sm" role="document">
 							<div class="modal-content">
-								<div class="modal-header bg-warning">										
+								<div class="modal-header bg-warning">
 										<h4 class="modal-title">Senior Citizen</h4>
 								</div>
 							<div class="modal-body">
