@@ -79,6 +79,8 @@ if($mydate['hours'] == '22' && $mydate['minutes'] == '52'){
 				<li ><a  href="salad.php">Salad</a></li>
 				<li ><a  href="pastry.php">Pastry</a></li>
 				<li ><a  href="day.php">All Day</a></li>
+				<li ><a href="smoothies.php">Smoothies</a></li>
+				<li><a href="addons.php">Add-ons</a></li>
 			</ul>
 
 			<div class="row m-l">
